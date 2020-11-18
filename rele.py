@@ -4,8 +4,10 @@ from environment import get_option
 
 redis_client = redis.Redis(**get_option('redis'))
 
-print(get_option('redis'))
-print(redis_client.keys())
+from rele import Provider
 
-# from rele import Provider
-# provider = Provider(redis_client)
+provider = Provider(
+  redis=redis_client,
+  broadcast_channel='RELE_BROADCAST_CHANNEL'
+)
+provider.feed(data='1,2\n3,4\n5,6\n7,8')
