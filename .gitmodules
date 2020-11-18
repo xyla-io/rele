@@ -1,0 +1,12 @@
+[submodule "development_packages/data_layer"]
+	path = development_packages/data_layer
+	url = git@github.com:xyla-io/data_layer
+[submodule "development_packages/moda"]
+	path = development_packages/moda
+	url = git@github.com:xyla-io/moda
+[submodule "development_packages/subir"]
+	path = development_packages/subir
+	url = git@github.com:xyla-io/subir
+[submodule "development_packages/fabrica"]
+	path = development_packages/fabrica
+	url = git@github.com:xyla-io/fabrica
