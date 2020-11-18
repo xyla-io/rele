@@ -8,10 +8,10 @@ try:
 except KeyError:
   environment = 'local'
 
-default_environemnt = json.load(Path(__file__).parent / 'env.default.json')
+default_environemnt = json.loads((Path(__file__).parent / 'env.default.json').read_bytes())
 local_path = Path(__file__).parent / f'env.{environment}.json'
 if local_path.exists():
-  local_environemnt = json.load(local_path)
+  local_environemnt = json.loads(local_path.read_bytes())
 else:
   local_environemnt = {}
 
