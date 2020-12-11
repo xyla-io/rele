@@ -1,1 +1,1 @@
-from .provider import Provider, BatchProvider
+from .provider import Provider, BatchProvider, ProviderStreamInfo
