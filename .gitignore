@@ -5,3 +5,6 @@ __pycache__/
 *.pyc
  
 *.egg-info/
+/input/**/.~lock.*
+/output/**/*.*
+!/output/fabrica/README.md

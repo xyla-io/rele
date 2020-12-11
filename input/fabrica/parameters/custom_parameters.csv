@@ -1,0 +1,3 @@
+disabled,template,table,source_templates,source_tables,source_queries,target_id,source_context,source,source_iterator
+FALSE,xy,,,,,.*,"from random import randrange
+v['randrange'] = randrange",,v = range(100)
