@@ -31,4 +31,7 @@ source .venv/bin/activate
 pip install --upgrade pip
 pip install -r requirements.txt
 
+cd development_packages
+install_development_packages
+
 deactivate
